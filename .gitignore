@@ -1,9 +1,10 @@
 # Node modules
 node_modules/
 
-# Next.js build output
-.next/
-out/
+/node_modules
+/.pnp
+.pnp.js
+.env
 
 # Environment variable files (keep sensitive data local)
 .env.local
