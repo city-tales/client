@@ -1,0 +1,6 @@
+:root {
+    --city-bg-url: url('/public/home-page-city-background.avif');
+    --font-playfair: 'Playfair Display', serif;
+    --font-caveat: 'Caveat', cursive;
+    --font-vulpa: 'Vulpa', serif;
+}
