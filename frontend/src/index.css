@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Vulpa font remains as TTF, if it's still a TTF file */
+@font-face {
+  font-family: 'Vulpa';
+  src: url('/fonts/Vulpa.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Update this if your AlongSanss2-SemiBoldItalic font is now an OTF file */
+@font-face {
+  font-family: 'AlongSanss2-SemiBoldItalic';
+  src: url('/fonts/AlongSanss2-SemiBoldItalic.otf') format('opentype');
+  font-weight: normal; /* or 600 if needed */
+  font-style: normal;  /* or italic if appropriate */
+}
+.footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* Force the html/body to have no margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}

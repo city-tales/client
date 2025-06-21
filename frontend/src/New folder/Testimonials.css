@@ -1,0 +1,81 @@
+/* === Outer wrapper with top/bottom border lines === */
+.section-wrapper {
+  border-top: 1px solid #f5c6a5;
+  border-bottom: 1px solid #f5c6a5;
+  padding: 8rem 2rem 8rem 2rem;
+  background-color: #ffffff;
+}
+
+/* === Base container === */
+.about-section {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #363737;
+  
+}
+
+.about-container {
+  max-width: 1050px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* === Heading – Bigger like Substack === */
+.about-heading {
+  font-size: 46px;           /* was 36px */
+  line-height: 54px;
+  font-weight: 400;
+  color: #363737;
+  margin-bottom: 3rem;
+}
+
+/* === Paragraphs – scaled up === */
+.about-paragraph {
+  font-size: 19px;           /* was 17px */
+  line-height: 30px;
+  letter-spacing: -0.25px;
+  color: #363737;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.highlight {
+  color: #ff5722;
+  font-weight: 500;
+}
+
+.highlight-link {
+  color: #ff5722;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+.about-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -3rem;
+}
+
+
+
+.about-button {
+  background: #ff5722;
+  color: #fff;
+  padding: 0.65rem 1.6rem;      /* tighter */
+  font-size: 1rem;              /* ~16px */
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;           /* smaller curve */
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: inline-block;
+  margin-top: 3rem;
+}
+
+.about-button:hover {
+  background: #e64a19;
+}
+
+
+

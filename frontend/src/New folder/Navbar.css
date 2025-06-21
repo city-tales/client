@@ -1,0 +1,96 @@
+
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* All items start from the left */
+    margin-left: 31rem;        /* minimal horizontal padding */
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    color: #fff;
+  }
+
+  
+/* Left brand area */
+.navbar-left {
+    /* optional styling */
+  }
+  
+  .brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;         /* inherits white from .navbar */
+  }
+  
+  /* Nav links (5–6 items) */
+  .navbar-links {
+    display: flex;
+    gap: 2rem;              /* space among links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: #FCF8F1;        /* white text */
+    font-size: 1rem;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .navbar-links li a:hover {
+    color: #fcbf3f;         /* highlight on hover */
+  }
+  
+  /* Gradient search box (pill shape) */
+  /* The outer container that forms the pill shape */
+  .search-box {
+    display: flex;
+    align-items: center;
+    /* Pill shape */
+    border-radius: 9999px;
+    overflow: hidden;   /* ensures both parts share the same curved boundary */
+    /* Fixed height so both input & icon container match */
+    height: 2rem; 
+  margin-left:3rem;
+    /* White background for the left portion by default */
+    background: #FDF2D5;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2); /* optional subtle shadow */
+  }
+  
+  /* The input is transparent so it shows the white background of .search-box */
+  .search-input {
+    flex: 1;               /* takes up remaining space */
+    border: none;
+    background: transparent;
+    color: #333;           /* dark text on white background */
+    font-size: 1rem;
+
+    padding: 0 1rem;
+    outline: none;
+  }
+  
+  /* The container for the icon on the right with a gradient */
+  .search-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,#ECB38E,#ECB38E);
+    /* Make it the same height as the parent, so it lines up perfectly */
+    height: 100%;
+    padding: 0 1rem;       /* horizontal space around the icon */
+    cursor: pointer;       /* if you want the icon clickable */
+  }
+  
+  /* The magnifying glass icon */
+  .search-icon {
+    width: 1rem;
+    height: 1rem;
+    color: #333;           /* or #000, etc. */
+  }
+  

@@ -1,0 +1,23 @@
+/* LandingPage.css */
+
+/* Example: custom font for the hero heading */
+.hero-heading {
+    font-family: 'Cinzel', serif; /* Or any font you like */
+    letter-spacing: 1px;
+  }
+  
+  /* Example: custom class for an overlay if you don't want to rely on inline tailwind classes */
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Card images if you want to override object-fit or border radius */
+  .card-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  

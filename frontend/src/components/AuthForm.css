@@ -1,0 +1,143 @@
+/* Background Styling */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/11.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.auth-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    backdrop-filter: blur(3px); /* Soft blur */
+    z-index: 1;
+}
+
+/* Signup Box */
+.auth-box {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+    width: 380px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 2;
+}
+
+/* Title */
+.auth-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Input Fields */
+.auth-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #f4e7d1, #ffffff);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2A2A2A;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.15), inset -2px -2px 5px rgba(255, 255, 255, 0.2);
+    margin-bottom: 12px;
+}
+
+/* File Upload */
+/* Upload Profile Picture */
+.file-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.file-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.file-input {
+    width: 100%;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Create Account Button */
+.create-btn {
+    width: 100%;
+    background: linear-gradient(90deg, #FF6A00, #FF3C00);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+    margin-top: 15px;
+}
+
+.create-btn:hover {
+    box-shadow: 0 0 15px rgba(255, 102, 0, 0.8);
+}
+
+/* Social Login Buttons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.google-btn {
+    background: linear-gradient(145deg, #DB4437, #C1351F);
+}
+
+.facebook-btn {
+    background: linear-gradient(145deg, #3B5998, #283A5D);
+}
+
+/* Sign In Link */
+.login-text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.login-text a {
+    font-weight: bold;
+    color: #FF3C00;
+    text-decoration: none;
+}
