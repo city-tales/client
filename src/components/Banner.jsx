@@ -2,6 +2,7 @@ import Navbar from './Navbar';
 import '../styles/Banner.css';
 import Card from './Card';
 import { IMAGE_URLS } from '../utils/constants';
+import Testimonials from './Testimonials';
 
 function Banner() {
     return (
@@ -74,6 +75,8 @@ function Banner() {
                         />
                     </div>
                 </section>
+
+                <Testimonials />
             </header>
         </>
     );
