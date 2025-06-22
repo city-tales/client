@@ -3,6 +3,7 @@ import '../styles/Banner.css';
 import Card from './Card';
 import { IMAGE_URLS } from '../utils/constants';
 import Testimonials from './Testimonials';
+import RevenueModel from './RevenueModel';
 
 function Banner() {
     return (
@@ -77,6 +78,7 @@ function Banner() {
                 </section>
 
                 <Testimonials />
+                {/* <RevenueModel /> */}
             </header>
         </>
     );
